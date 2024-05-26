@@ -55,3 +55,4 @@ const handleImage = (req, res, db) => {
 };
 
 export {handleClarifaiCall};
+export{handleImage};
