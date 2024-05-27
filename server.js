@@ -13,6 +13,10 @@ const db = knex({
     searchPath: [process.env.DB_SCHEMA, 'public'],
 });
 
+db.raw('SELECT 1')
+    .then(() => console.log('Database connected'))
+    .catch(err => console.log('Database connection failed', err));
+
 const app = express();
 app.use(express.json());
 app.use(cors());
