@@ -6,9 +6,9 @@ import { handleRegister } from './controllers/register.js';
 import { handleSignin } from './controllers/signin.js';
 import { handleProfileGet } from './controllers/profile.js';
 import { handleImage, handleClarifaiCall } from './controllers/image.js';
-import dotenv from 'dotenv';
+// import dotenv from 'dotenv';
 
-dotenv.config();
+// dotenv.config();
 
 
 const db = knex({
