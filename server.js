@@ -10,7 +10,7 @@ import { handleImage, handleClarifaiCall } from './controllers/image.js';
 const db = knex({
     client: 'pg',
     connection: process.env.DATABASE_URL,
-    searchPath: ['knex', 'public'],
+    searchPath: [process.env.DB_SCHEMA, 'public'],
 });
 
 const app = express();
